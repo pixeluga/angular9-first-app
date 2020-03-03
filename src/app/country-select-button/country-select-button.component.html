@@ -1,0 +1,14 @@
+<div>
+    <button
+        id={{buttonId}}
+        class="btn btn-normal"
+        (click)="onChange()"
+        (mouseenter)="onChange()"
+        >
+        {{buttonText}}
+    </button>
+
+    <div [style.display]="ulDisplay ? 'block' : 'none'">
+        <countries-list [countries]="countriesArray"></countries-list>
+    </div>
+</div>

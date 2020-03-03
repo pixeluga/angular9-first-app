@@ -1,0 +1,10 @@
+<ul class="countriesUl">
+    <li><input type="text"
+        placeholder="Search"
+        (input)="onSearch($event.target.value)"></li>
+    <hr>
+    <li *ngFor="let country of displayCountries"
+        (click)="onSelect(country.name)">
+        <span>{{country.flag}}</span> {{country.name}}
+    </li>
+</ul>
